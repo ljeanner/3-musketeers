@@ -12,14 +12,16 @@
 
 ## Presentation 
 
- to see the List of all currencies: http://akep.us/currencies
+ Convert your money 
+ To see the list of all currencies: http://akep.us/currencies
 
 ## Required
 
 Instal all the require module  
 
 In [your-path]\3-musketeers\cash\ excute the command  : 
-    $ npm install 
+   
+   $ npm install 
 
 It will install all the module we need to run the application 
 
@@ -34,10 +36,15 @@ node index.js
 
 All the Commands allowed :
 Save currencies as default currencies
+
 $ --save,  -s  
- Display help message
+
+Display help message
+
 $ --help,  -h   
+
 Display version number
+
 $ --version,  -v     
 
 ## Example 
