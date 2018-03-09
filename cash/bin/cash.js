@@ -1,12 +1,17 @@
 /*eslint-disable no-process-exit*/
+/* modules required */
 const got = require('got');
 const money = require('money');
 const chalk = require('chalk');
 const ora = require('ora');
 const currencies = require('../lib/currencies.json');
 
+/*API call */
 const API = 'https://api.fixer.io/latest';
 
+
+/*  function that convert an amount of money by 
+*/
 const convert = configuration => {
   const {amount, to, from, response, loading} = configuration;
 
@@ -34,6 +39,7 @@ const convert = configuration => {
   process.exit(1);
 };
 
+/**/
 const cash = async command => {
   const amount = command.amount;
   const from = command.from.toUpperCase();
@@ -67,5 +73,6 @@ const cash = async command => {
     process.exit(1);
   }
 };
+
 
 module.exports = cash;
