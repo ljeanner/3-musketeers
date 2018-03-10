@@ -8,6 +8,7 @@ const config = new Conf();
 
 updateNotifier({pkg}).notify();
 
+// Save the convertion in ..\AppData\Local\cash-nodejs\Config 
 const saveCurrencies = argv => {
   config.set('defaultFrom', argv[1] || config.get('defaultFrom', 'USD'));
   config.set(
@@ -20,11 +21,13 @@ const saveCurrencies = argv => {
   process.exit(1);
 };
 
+// give the version according package.json file
 const version = () => {
   console.log(pkg.version);
   process.exit(1);
 };
 
+// give all the commands 
 const help = () => {
   console.log(`
 Usage:
@@ -57,6 +60,7 @@ Examples:
   process.exit(1);
 };
 
+// function that excecute the commands 
 const helpers = argv => {
   // Version
   if (argv.indexOf('--version') !== - 1 || argv.indexOf('-v') !== - 1) {
@@ -71,7 +75,7 @@ const helpers = argv => {
   ) {
     help();
   }
-
+// Save 
   if (
     argv.indexOf('--save') !== - 1
     || argv.indexOf('-s') !== - 1

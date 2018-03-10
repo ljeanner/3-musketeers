@@ -22,49 +22,48 @@ Instal all the require module
 
 In [your-path]\3-musketeers\cash\ excute the command  : 
    
-   $ npm install 
+    $ npm install 
 
 It will install all the module we need to run the application 
 To see the library installed cf library 
 
 ## Run 
     
-    $ Run the application  
+Run the application  
 
 In [your-path]\3-musketeers\cash\bin excute the command  : 
-node index.js 
+
+    $ node index.js 
 
 ## Commands
 
 All the Commands allowed :
 Save currencies as default currencies
 
-$ --save,  -s  
+    $ --save,  -s  
 
 Display help message
 
-$ --help,  -h   
+    $ --help,  -h   
 
 Display version number
 
-$ --version,  -v     
-
+    $ --version,  -v     
+    
 ## Example 
 
 Example of what you can do 
 
- $ node bin/index.js 1 usd
+    $ node bin/index.js 1 usd
 
- $ node bin/index.js 1 usd eur pln aud
+    $ node bin/index.js 1 usd eur pln aud
 
- $ node bin/index.js --save usd eur pln aud
+    $ node bin/index.js --save usd eur pln aud
 
- $ node bin/index.js --help
+    $ node bin/index.js --help
  
  
  ## Library 
- 
-
  
  ## Chalk 
  Chalk comes with an easy to use composable API where you just chain and nest the styles you want.
@@ -82,3 +81,5 @@ Example of what you can do
   
  ## Updtate- notifier 
   
+ ## pkg
+ Find the closest package.json file

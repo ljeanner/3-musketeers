@@ -1,4 +1,5 @@
 /*eslint-disable no-process-exit*/
+
 /* modules required */
 const got = require('got');
 const money = require('money');
@@ -10,7 +11,7 @@ const currencies = require('../lib/currencies.json');
 const API = 'https://api.fixer.io/latest';
 
 
-/*  function that convert an amount of money by 
+/*  function that convert an amount of money in realtime by using the money module and the call the currency API  
 */
 const convert = configuration => {
   const {amount, to, from, response, loading} = configuration;

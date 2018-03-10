@@ -9,7 +9,7 @@ const config = new Conf();
 const argv = process.argv.slice(2);
 
 helpers(argv);
-
+// default 
 const command = {
   'amount': argv[0] || 1,
   'from': argv[1] || config.get('defaultFrom', 'USD'),
@@ -18,5 +18,5 @@ const command = {
       ? process.argv.slice(4)
       : config.get('defaultTo', ['USD', 'EUR', 'GBP'])
 };
-
+/*cash call*/
 cash(command);
